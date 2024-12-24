@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Chat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('background.jpg'); /* Replace with your background image link */
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            user-select: none; /* Mencegah pemilihan teks */
+        }
+        .container {
+            max-width: 350px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 30px 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            width: 40px; /* Ukuran logo WhatsApp */
+            height: 40px;
+            margin-right: 10px;
+        }
+        h1 {
+            color: #333;
+            font-weight: bold;
+            margin: 0;
+            font-size: 24px;
+            line-height: 40px; /* Tinggi baris disesuaikan dengan logo */
+        }
+        .circle-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background-image: url('bg.jpg'); /* Replace with your image link */
+            background-size: cover;
+            background-position: center;
+            margin: 10px auto 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .description {
+            color: #555;
+            font-size: 14px;
+            margin: 0 0 20px;
+            font-weight: bold;
+            line-height: 1.7;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #25D366;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin-top: 20px;
+            width: auto;
+        }
+        .button:hover {
+            background-color: #1da851;
+            transform: translateY(-3px);
+        }
+    </style>
+    <script>
+        // Menonaktifkan klik kanan
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+
+        // Menonaktifkan shortcut keyboard seperti Ctrl+C
+        document.addEventListener('keydown', function (e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'u' || e.key === 's' || e.key === 'p')) {
+                e.preventDefault();
+            }
+        });
+
+        // Menonaktifkan pemilihan teks
+        document.addEventListener('selectstart', function (e) {
+            e.preventDefault();
+        });
+
+        function getRandomLink() {
+            const links = [
+                "https://vnanxl.llovesgreat.com/?utm_source=da57dc555e50572d&&ban=inst&j1=1&s1=226805&s2=2083622&s3=NARUTO&click_id=GACOR_ABIEZ",
+                "https://xtwphrh.mysweet-contactstimes.com/g2t2cdv?t=NARUTO&cid=GACOR_BANGETS"
+            ];
+            const randomIndex = Math.floor(Math.random() * links.length);
+            return links[randomIndex];
+        }
+
+        function redirectToRandomLink() {
+            window.location.href = getRandomLink();
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo"> <!-- Replace with your logo link -->
+            <h1>WhatsApp</h1>
+        </div>
+        <div class="circle-image"></div>
+        <p class="description">Please look for me on dating sites.
+            And you can also look for sexy women there.
+            Please click the link and follow the free registration steps just by answering all the questions and entering your age over 35 years and Submit email there 😊❤
+            
+            Once you join, you can search everything there.
+            
+            Note: This is the official site, please see for yourself 😊❤</p>
+        <button class="button" onclick="redirectToRandomLink()">Continue to Chat</button>
+    </div>
+</body>
+</html>
